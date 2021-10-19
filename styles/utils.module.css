@@ -1,0 +1,95 @@
+.heading2Xl {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.headingXl {
+  font-size: 2rem;
+  line-height: 1.3;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.headingLg {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 1rem 0;
+}
+
+.headingMd {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.borderCircle {
+  border-radius: 9999px;
+}
+
+.colorInherit {
+  color: inherit;
+}
+
+.padding1px {
+  padding-top: 1px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.listItem {
+  margin: 0 0 1.25rem;
+}
+
+.lightText {
+  color: #AAA;
+  font-weight: lighter;
+}
+
+.maxsclass {
+  color: #2e8b84;
+}
+.maxsclass:hover {
+  text-decoration: underline;
+}
+
+.darkGreen {
+  color: #eeeab2;
+}
+.lightBlue {
+  color: rgb(122, 168, 255);
+}
+.lightYellow {
+  color: #eeeab2;
+}
+
+.darkGreen {
+  color: rgb(0, 105, 88);
+}
+
+.string {
+  color: rgb(190, 126, 83);
+  font-weight: 500;
+}
+
+.comment {
+  /*  */
+  color: rgb(4, 131, 0);
+  font-weight: 600;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.autoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* text-align: left; */
+}

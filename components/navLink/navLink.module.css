@@ -1,0 +1,11 @@
+.navlink {
+  font-weight: bold;
+}
+
+.navlink:not(:last-of-type) {
+    margin-right: 1rem;
+}
+
+.navlink:hover {
+  background-color: #000;
+}
