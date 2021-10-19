@@ -23,8 +23,8 @@ export default function Experience() {
             img={Portfolio}
             description="personal portfolio showing about me and my work."
             tools="HTML, CSS, JavaScript,React.js, Next.js  "
-            live="https://memorama-five.vercel.app/"
-            code="https://github.com/Maxs22/memorama"
+            live=""
+            code="https://github.com/Maxs22/Portfolio"
           />
           <ProjectsOption
           title="Team of heroes"
