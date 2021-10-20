@@ -7,6 +7,8 @@ import Heroes from "../../public/images/ImageProjects/Heroes.png";
 import Juego from "../../public/images/ImageProjects/Juego.png";
 import Aerolab from "../../public/images/ImageProjects/Aerolab.png";
 import Portfolio from "../../public/images/ImageProjects/Portfolio.png";
+import pokemon from "../../public/images/ImageProjects/pokemon.png";
+
 
 
 
@@ -16,14 +18,21 @@ export default function Experience() {
       <Head>
         <title>{name}</title>
       </Head>
-      <div className={Styles.projects}>
       <div className={Styles.projects__options}>
+        <ProjectsOption
+              title="Challenge-Pokedex"
+              img={pokemon}
+              description="pokedex app."
+              tools="HTML, SCSS, JavaScript, React.js, Next.js  "
+              live="https://pokedex-challenge-jemersoft.vercel.app/"
+              code="https://github.com/Maxs22/pokedex-challenge-Jemersoft"
+            />
         <ProjectsOption
             title="Portfolio"
             img={Portfolio}
             description="personal portfolio showing about me and my work."
             tools="HTML, CSS, JavaScript,React.js, Next.js  "
-            live=""
+            live="https://portfolio-maxs.vercel.app/"
             code="https://github.com/Maxs22/Portfolio"
           />
           <ProjectsOption
@@ -58,7 +67,6 @@ export default function Experience() {
           live="https://memorama-five.vercel.app/"
           code="https://github.com/Maxs22/memorama"
         />
-        </div>
         </div>
     </Layout>
   );
