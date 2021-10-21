@@ -8,6 +8,7 @@ import Juego from "../../public/images/ImageProjects/Juego.png";
 import Aerolab from "../../public/images/ImageProjects/Aerolab.png";
 import Portfolio from "../../public/images/ImageProjects/Portfolio.png";
 import pokemon from "../../public/images/ImageProjects/pokemon.png";
+import PelisAr from "../../public/images/ImageProjects/PelisAr.png";
 
 
 
@@ -26,6 +27,14 @@ export default function Experience() {
               tools="HTML, SCSS, JavaScript, React.js, Next.js  "
               live="https://pokedex-challenge-jemersoft.vercel.app/"
               code="https://github.com/Maxs22/pokedex-challenge-Jemersoft"
+            />
+            <ProjectsOption
+              title="PelisAr"
+              img={PelisAr}
+              description="page layout to watch movies."
+              tools="HTML, CSS, CSS-MODULE, JavaScript, React.js"
+              live=""
+              code="https://github.com/Maxs22/my-app"
             />
         <ProjectsOption
             title="Portfolio"
