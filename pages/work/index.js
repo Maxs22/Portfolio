@@ -9,6 +9,7 @@ import Aerolab from "../../public/images/ImageProjects/Aerolab.png";
 import Portfolio from "../../public/images/ImageProjects/Portfolio.png";
 import pokemon from "../../public/images/ImageProjects/pokemon.png";
 import PelisAr from "../../public/images/ImageProjects/PelisAr.png";
+import Vision from "../../public/images/ImageProjects/Vision.png";
 
 
 
@@ -36,6 +37,14 @@ export default function Experience() {
               live=""
               code="https://github.com/Maxs22/my-app"
             />
+             <ProjectsOption
+            title="BlackBox Vision - Challenge"
+            img={Vision}
+            description="The game consists of 10 questions which can be true / false or multiple choice."
+            tools="HTML, SCSS, JavaScript,React.js, Api , TypeScript , Vite  "
+            live="https://challenge-vision.vercel.app/"
+            code="https://github.com/Maxs22/Challenge-vision"
+          />
         <ProjectsOption
             title="Portfolio"
             img={Portfolio}
