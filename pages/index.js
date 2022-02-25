@@ -24,7 +24,7 @@ export default function Home() {
         <p className={utilStyles.lightText}>map(), filter(), reduce() fan</p>
         <p className={utilStyles.comment}>// If the code works, don't touch it...</p>
         <p>
-          <NavLink path="resume.pdf" text="downloadCV"/>
+          <NavLink path="resume.pdf" text="downloadCV" />
         </p>
       </section>
     </Layout>
