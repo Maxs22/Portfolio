@@ -20,7 +20,7 @@ export default function Home() {
         {/* <p>
           &#123; Full stack developer &#125;
         </p> */}
-        <p>Full Stack Web Developer</p>
+        <p>Front-End Web Developer</p>
         <p className={utilStyles.lightText}>map(), filter(), reduce() fan</p>
         <p className={utilStyles.comment}>// If the code works, don't touch it...</p>
         <p>

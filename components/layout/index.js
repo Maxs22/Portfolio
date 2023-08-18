@@ -5,7 +5,7 @@ import utilStyles from "../../styles/utils.module.css";
 import Nav from "../../components/nav";
 import ReactTypingEffect from "react-typing-effect";
 
-export const name = "MaximiliaN";
+export const name = "Maxs-Dev";
 export const siteTitle = "Portfolio";
 
 export default function Layout({ children, activePage }) {

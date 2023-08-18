@@ -11,7 +11,7 @@ export default function About() {
       <section>
         <p>I am a full stack developer from Buenos Aires, Argentina</p>
         <p className={utilStyles.lightText}>
-        I started my journey in the world of computers from an early age, I am now 28 years old, 
+        I started my journey in the world of computers from an early age, I am now 30 years old, 
         pursuing my degree in Information Technology Analyst and Communication. Web development is my center of interest, 
         I have always liked the idea of ​​multiplatform development, 
         what web technology like Javascript allows me to do. I also like creating interactive UI components for better UX
@@ -28,33 +28,12 @@ export default function About() {
             </div>
             <div>
               <div>React / Next JS</div>
-              <div>Kendo UI, FusionCharts</div>
+              <div>Vue.js</div>
+              <div>Flutter</div>
             </div>
             <div>
               <div>Bootstrap</div>
               <div>SASS/SCSS</div>
-            </div>
-          </div>
-        </article>
-        <article>
-          <h2>Back End Development</h2>
-          <div
-            className={[utilStyles.autoGrid, utilStyles.lightText].join(" ")}
-          >
-            <div>
-              <div>PHP</div>
-              <div>Node.js</div>
-            </div>
-            <div>
-              <div>T-SQL</div>
-              <div>MySQL</div>
-              <div>MongoDB</div>
-            </div>
-            <div>
-              <div>WAMP</div>
-              <div>IIS</div>
-              <div>Heroku</div>
-              <div>Vercel</div>
             </div>
           </div>
         </article>

@@ -7,7 +7,7 @@ export default function Nav({ activePage }) {
     <nav className={styles.navBar}>
       <h1 className={utilStyles.headingXl}>
         <Link href="/">
-          <a className={utilStyles.maxsclass}>Maxs</a>
+          <a className={utilStyles.maxsclass}>MaxsDev</a>
         </Link>
         .<span className={utilStyles.lightYellow}>{activePage || "is"}</span>()
       </h1>
