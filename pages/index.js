@@ -730,7 +730,7 @@ import { useState, useEffect } from 'react';
                     flexWrap: 'wrap',
                     gap: '0.8rem'
                   }}>
-                    {['Flutter', 'Vue.js', 'React', 'TypeScript', 'Firebase', 'Dart'].map((skill, index) => (
+                    {['Flutter', 'Vue.js', 'React', 'TypeScript', 'Firebase', 'Dart'].map((skill) => (
                       <span key={skill} style={{
                         background: 'rgba(255, 107, 53, 0.1)',
                         color: '#ff6b35',
@@ -868,7 +868,7 @@ import { useState, useEffect } from 'react';
                 fontSize: '4rem',
                 color: 'rgba(255, 107, 53, 0.1)'
               }}>
-                "
+                &ldquo;
               </div>
               <blockquote style={{
                 fontSize: '1.5rem',
