@@ -1,0 +1,6 @@
+{
+  "buildCommand": "echo 'Skipping Vercel build - using GitHub Pages'",
+  "outputDirectory": "out",
+  "framework": null,
+  "installCommand": "echo 'Skipping Vercel install'"
+}

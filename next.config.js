@@ -5,14 +5,17 @@ const nextConfig = {
     domains: ['localhost'],
     unoptimized: true
   },
-  // Solo usar export para builds de producción
-  ...(process.env.NODE_ENV === 'production' && {
-    output: 'export',
-    trailingSlash: true,
-    distDir: 'out',
-    assetPrefix: '/Portfolio',
-    basePath: '/Portfolio',
-  }),
+  // Configuración para GitHub Pages
+  output: 'export',
+  trailingSlash: true,
+  distDir: 'out',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/Portfolio' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/Portfolio' : '',
+  // Deshabilitar optimizaciones que no funcionan con export estático
+  swcMinify: false,
+  experimental: {
+    esmExternals: false
+  }
 }
 
 module.exports = nextConfig

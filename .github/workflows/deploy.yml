@@ -36,9 +36,12 @@ jobs:
         run: npm run lint -- --fix
         
       - name: 🏗️ Build portfolio
-        run: npm run build
+        run: |
+          npm run build
+          echo "Build completed successfully"
         env:
           NODE_ENV: production
+          NEXT_PUBLIC_BASE_PATH: /Portfolio
           
       - name: 📁 Upload build artifacts
         uses: actions/upload-pages-artifact@v3
