@@ -1,0 +1,105 @@
+{
+  "React Component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "const ${1:ComponentName} = () => {",
+      "  return (",
+      "    <div>",
+      "      ${2:// Component content}",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:ComponentName};"
+    ],
+    "description": "React Functional Component"
+  },
+  "Next.js Page": {
+    "prefix": "npage",
+    "body": [
+      "import Head from 'next/head';",
+      "import Layout from '../components/layout';",
+      "",
+      "export default function ${1:PageName}() {",
+      "  return (",
+      "    <Layout>",
+      "      <Head>",
+      "        <title>${2:Page Title}</title>",
+      "      </Head>",
+      "      <div>",
+      "        ${3:// Page content}",
+      "      </div>",
+      "    </Layout>",
+      "  );",
+      "}"
+    ],
+    "description": "Next.js Page Component"
+  },
+  "Flutter Widget": {
+    "prefix": "fwidget",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "",
+      "class ${1:WidgetName} extends StatelessWidget {",
+      "  const ${1:WidgetName}({Key? key}) : super(key: key);",
+      "",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return ${2:Container(",
+      "      child: ${3:// Widget content}",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Flutter Widget"
+  },
+  "Flutter Stateful Widget": {
+    "prefix": "fstateful",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "",
+      "class ${1:WidgetName} extends StatefulWidget {",
+      "  const ${1:WidgetName}({Key? key}) : super(key: key);",
+      "",
+      "  @override",
+      "  State<${1:WidgetName}> createState() => _${1:WidgetName}State();",
+      "}",
+      "",
+      "class _${1:WidgetName}State extends State<${1:WidgetName}> {",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return ${2:Container(",
+      "      child: ${3:// Widget content}",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Flutter Stateful Widget"
+  },
+  "Flutter App": {
+    "prefix": "fapp",
+    "body": [
+      "import 'package:flutter/material.dart';",
+      "",
+      "void main() {",
+      "  runApp(MyApp());",
+      "}",
+      "",
+      "class MyApp extends StatelessWidget {",
+      "  @override",
+      "  Widget build(BuildContext context) {",
+      "    return MaterialApp(",
+      "      title: '${1:App Title}',",
+      "      theme: ThemeData(",
+      "        primarySwatch: Colors.blue,",
+      "      ),",
+      "      home: ${2:MyHomePage(title: '${1:App Title}')},",
+      "    );",
+      "  }",
+      "}"
+    ],
+    "description": "Flutter App"
+  }
+}

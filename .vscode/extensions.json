@@ -1,0 +1,21 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode",
+    "ms-vscode.vscode-typescript-next",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "ms-vscode.vscode-json",
+    "dart-code.dart-code",
+    "dart-code.flutter",
+    "ms-vscode.vscode-eslint",
+    "ms-vscode.vscode-prettier",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-typescript-next",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    "ms-vscode.vscode-json",
+    "dart-code.dart-code",
+    "dart-code.flutter"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "files.associations": {
+    "*.css": "css",
+    "*.module.css": "css"
+  },
+  "editor.rulers": [80, 120],
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/out": true
+  },
+  "dart.flutterSdkPath": null,
+  "dart.enableSdkFormatter": true,
+  "dart.lineLength": 80,
+  "dart.insertArgumentPlaceholders": false,
+  "dart.showTodos": true,
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  "dart.closingLabels": true,
+  "dart.enableSnippets": true,
+  "dart.analysisServerFolding": true,
+  "dart.analysisExcludedFolders": [
+    "**/.git",
+    "**/node_modules",
+    "**/.next"
+  ]
+}

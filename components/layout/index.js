@@ -24,7 +24,7 @@ export default function Layout({ children, activePage }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="MaximiliaN Developer Portfolio"
+          content="Maximiliano Mendez - Full-Stack Developer Portfolio specializing in React, Next.js, and Flutter"
         />
         <meta
           property="og:image"
