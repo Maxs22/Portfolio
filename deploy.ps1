@@ -53,7 +53,7 @@ if ($gitStatus) {
     
     Write-ColorOutput "Haciendo commit de los cambios..." "Blue"
     $timestamp = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
-    $commitMessage = "$Message: $timestamp"
+    $commitMessage = "$Message - $timestamp"
     git commit -m $commitMessage
     Write-Success "Commit realizado exitosamente"
 } else {
