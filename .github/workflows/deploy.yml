@@ -43,8 +43,15 @@ jobs:
           NODE_ENV: production
           NEXT_PUBLIC_BASE_PATH: /Portfolio
           
+      - name: 🔍 Verify build output
+        run: |
+          echo "Build output contents:"
+          ls -la ./out
+          echo "Checking if index.html exists:"
+          test -f ./out/index.html && echo "✅ index.html found" || echo "❌ index.html missing"
+          
       - name: 📁 Upload build artifacts
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./out
 
@@ -59,3 +66,8 @@ jobs:
       - name: 🚀 Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        
+      - name: ✅ Deployment Status
+        run: |
+          echo "Deployment completed successfully!"
+          echo "Page URL: ${{ steps.deployment.outputs.page_url }}"
