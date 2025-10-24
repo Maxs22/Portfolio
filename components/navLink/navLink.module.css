@@ -1,28 +1,11 @@
 .navlink {
-  position: relative;
-  color: var(--secondary-text);
+  color: #a1a1aa;
   font-weight: 500;
-  transition: all 0.3s ease;
-  padding: 0.5rem 0;
+  transition: color 0.3s ease;
 }
 
 .navlink:hover {
-  color: var(--primary-text);
-}
-
-.navlink::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--gradient-1);
-  transition: width 0.3s ease;
-}
-
-.navlink:hover::after {
-  width: 100%;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {

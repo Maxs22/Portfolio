@@ -3,12 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
-  border-bottom: 1px solid var(--border-color);
-  backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: rgba(10, 10, 10, 0.8);
+  border-bottom: 1px solid #333333;
 }
 
 .navBrand {
@@ -17,21 +12,9 @@
 
 .brandLink {
   text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.brandText {
+  color: #ffffff;
   font-size: 1.5rem;
   font-weight: 700;
-  background: var(--gradient-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-family: 'Space Grotesk', sans-serif;
-}
-
-.brandLink:hover .brandText {
-  transform: scale(1.05);
 }
 
 .navMenu {
