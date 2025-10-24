@@ -45,10 +45,8 @@ export default function Layout({ children, activePage }) {
       </main>
       {activePage && (
         <footer className={styles.footer}>
-          <Link href="/">
-            <a>
-              <span className={utilStyles.maxsclass}>return</span>;
-            </a>
+          <Link href="/" className={utilStyles.maxsclass}>
+            return
           </Link>
         </footer>
       )}
