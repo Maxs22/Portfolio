@@ -5,11 +5,14 @@ const nextConfig = {
     domains: ['localhost'],
     unoptimized: true
   },
-  output: 'export',
-  trailingSlash: true,
-  distDir: 'out',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/Portfolio' : '',
-  basePath: process.env.NODE_ENV === 'production' ? '/Portfolio' : '',
+  // Solo usar export para builds de producción
+  ...(process.env.NODE_ENV === 'production' && {
+    output: 'export',
+    trailingSlash: true,
+    distDir: 'out',
+    assetPrefix: '/Portfolio',
+    basePath: '/Portfolio',
+  }),
 }
 
 module.exports = nextConfig

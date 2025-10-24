@@ -8,7 +8,7 @@ import ReactTypingEffect from "react-typing-effect";
 export const name = "Maxs-Dev";
 export const siteTitle = "Portfolio";
 
-export default function Layout({ children, activePage }) {
+export default function Layout({ children, activePage, home }) {
   return (
     <div className={styles.container}>
       {/* <style global jsx>{`
@@ -35,9 +35,11 @@ export default function Layout({ children, activePage }) {
         <meta name="og:title" content={name + "'s " + siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
-        <Nav activePage={activePage}></Nav>
-      </header>
+      {!home && (
+        <header className={styles.header}>
+          <Nav activePage={activePage}></Nav>
+        </header>
+      )}
       <main className={styles.main}>
         {children}
       </main>
