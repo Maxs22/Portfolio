@@ -102,7 +102,15 @@ Configuración de Prettier para formateo automático del código.
 
 ## 🚀 Despliegue
 
-### Vercel (Recomendado)
+### GitHub Pages (Configurado)
+
+El proyecto está configurado para desplegarse automáticamente en GitHub Pages:
+
+1. **Configuración automática**: El workflow de GitHub Actions se encarga del despliegue
+2. **URL del sitio**: https://maxs22.github.io/Portfolio/
+3. **Actualizaciones automáticas**: Cada push a la rama `main` actualiza el sitio
+
+### Vercel (Alternativa)
 
 ```bash
 # Instalar Vercel CLI
