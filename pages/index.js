@@ -446,7 +446,7 @@ import { useState, useEffect } from 'react';
                     : 'Donation and tip platform that connects creators and professionals with their community through Mercado Pago.',
                   tech: 'React • Node.js • Mercado Pago',
                   url: 'https://plinfy.app/',
-                  type: 'Web App',
+                  type: language === 'es' ? 'Aplicación Web' : 'Web App',
                   icon: '💰'
                 },
                 {
@@ -456,7 +456,7 @@ import { useState, useEffect } from 'react';
                     : 'Mobile application available on Google Play Store for digital reading with advanced features.',
                   tech: 'Flutter • Dart • Firebase',
                   url: 'https://play.google.com/store/apps/details?id=com.teleo.app',
-                  type: 'Mobile App',
+                  type: language === 'es' ? 'Aplicación Móvil' : 'Mobile App',
                   icon: '📱'
                 },
                 {
@@ -466,7 +466,7 @@ import { useState, useEffect } from 'react';
                     : 'Mobile application available on Google Play Store for productivity management and daily focus.',
                   tech: 'Flutter • Dart • Firebase',
                   url: 'https://play.google.com/store/apps/details?id=com.dailyfocus.app',
-                  type: 'Mobile App',
+                  type: language === 'es' ? 'Aplicación Móvil' : 'Mobile App',
                   icon: '🎯'
                 }
               ].map((project, index) => (
