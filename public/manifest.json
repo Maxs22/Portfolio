@@ -1,0 +1,63 @@
+{
+    "name": "Maximiliano Méndez - Portfolio",
+    "short_name": "Max Portfolio",
+    "description": "Portfolio profesional de Maximiliano Méndez - Desarrollador Frontend Senior",
+    "version": "1.0.0",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0f0f0f",
+    "theme_color": "#ff6b35",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "es-AR",
+    "categories": [
+        "portfolio",
+        "developer",
+        "professional"
+    ],
+    "icons": [
+        {
+            "src": "/favicon-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Ver Proyectos",
+            "short_name": "Proyectos",
+            "description": "Ver mis proyectos de desarrollo",
+            "url": "/#work",
+            "icons": [
+                {
+                    "src": "/favicon-192x192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Contacto",
+            "short_name": "Contacto",
+            "description": "Contactar conmigo",
+            "url": "/#contact",
+            "icons": [
+                {
+                    "src": "/favicon-192x192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ]
+        }
+    ]
+}

@@ -120,6 +120,50 @@ import { useState, useEffect } from 'react';
       <Head>
         <title>Maximiliano Mendez - Portfolio | Desarrollador Frontend</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Portfolio profesional de Maximiliano Méndez - Desarrollador Frontend Senior especializado en React, Vue.js, Flutter y tecnologías modernas" />
+        <meta name="keywords" content="desarrollador frontend, react, vue.js, flutter, portfolio, maximiliano mendez" />
+        <meta name="author" content="Maximiliano Méndez" />
+        
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/svg+xml" sizes="16x16" href="/favicon-16x16.svg" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/svg+xml" sizes="32x32" href="/favicon-32x32.svg" />
+        <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+        <link rel="icon" type="image/svg+xml" sizes="48x48" href="/favicon-48x48.svg" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+        <link rel="icon" type="image/svg+xml" sizes="192x192" href="/favicon-192x192.svg" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
+        <link rel="icon" type="image/svg+xml" sizes="512x512" href="/favicon-512x512.svg" />
+        
+        {/* Apple Touch Icon */}
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        
+        {/* Manifest */}
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="manifest" href="/site.webmanifest" />
+        
+        {/* Browser Config */}
+        <meta name="msapplication-config" content="/browserconfig.xml" />
+        
+        {/* Theme Colors */}
+        <meta name="theme-color" content="#ff6b35" />
+        <meta name="msapplication-TileColor" content="#ff6b35" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Maximiliano Mendez - Portfolio | Desarrollador Frontend" />
+        <meta property="og:description" content="Portfolio profesional de Maximiliano Méndez - Desarrollador Frontend Senior especializado en React, Vue.js, Flutter y tecnologías modernas" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/favicon-512x512.png" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Maximiliano Mendez - Portfolio | Desarrollador Frontend" />
+        <meta name="twitter:description" content="Portfolio profesional de Maximiliano Méndez - Desarrollador Frontend Senior especializado en React, Vue.js, Flutter y tecnologías modernas" />
+        <meta name="twitter:image" content="/favicon-512x512.png" />
       </Head>
       
       {/* Language Switch */}
