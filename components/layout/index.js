@@ -39,9 +39,7 @@ export default function Layout({ children, activePage }) {
         <Nav activePage={activePage}></Nav>
       </header>
       <main className={styles.main}>
-      <h1> <ReactTypingEffect className="typingeffect" text={['Welcome, I´m' , '{ Maximiliano Mendez };']} speed={100} eraseDelay={900} />
-          </h1>
-     {children}
+        {children}
       </main>
       {activePage && (
         <footer className={styles.footer}>

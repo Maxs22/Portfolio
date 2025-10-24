@@ -5,16 +5,15 @@ import styles from "./nav.module.css";
 export default function Nav({ activePage }) {
   return (
     <nav className={styles.navBar}>
-      <h1 className={utilStyles.headingXl}>
-        <Link href="/" className={utilStyles.maxsclass}>
-          MaxsDev
+      <div className={styles.navBrand}>
+        <Link href="/" className={styles.brandLink}>
+          <span className={styles.brandText}>MaxsDev</span>
         </Link>
-        .<span className={utilStyles.lightYellow}>{activePage || "is"}</span>()
-      </h1>
+      </div>
       <div className={styles.navMenu}>
-        <NavLink path="about" />
-        <NavLink path="work" />
-        <NavLink path="contact" />
+        <NavLink path="about" text="About" />
+        <NavLink path="work" text="Work" />
+        <NavLink path="contact" text="Contact" />
       </div>
     </nav>
   );
