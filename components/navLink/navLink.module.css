@@ -1,12 +1,15 @@
 .navlink {
-  font-weight: bold;
-}
-
-.navlink:not(:last-of-type) {
-    margin-right: 1rem;
+  color: #a1a1aa;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .navlink:hover {
-  background-color: #22222D;
+  color: #ffffff;
+}
 
+@media (max-width: 768px) {
+  .navlink {
+    font-size: 0.875rem;
+  }
 }

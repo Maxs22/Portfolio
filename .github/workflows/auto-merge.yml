@@ -1,0 +1,34 @@
+name: 🔄 Auto-merge to Main
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches: [ main, master ]
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    if: github.actor == 'Maxs22' && contains(github.event.pull_request.title, '[AUTO-MERGE]')
+    steps:
+      - name: 🤖 Auto-merge PR
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: pr } = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number
+            });
+            
+            if (pr.mergeable && pr.mergeable_state === 'clean') {
+              await github.rest.pulls.merge({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: context.issue.number,
+                merge_method: 'squash'
+              });
+              
+              console.log('✅ PR merged successfully');
+            } else {
+              console.log('❌ PR cannot be merged:', pr.mergeable_state);
+            }

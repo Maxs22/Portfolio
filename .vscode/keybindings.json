@@ -1,0 +1,54 @@
+[
+  {
+    "key": "ctrl+shift+d",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "workbench.view.search"
+  },
+  {
+    "key": "ctrl+shift+x",
+    "command": "workbench.view.extensions"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "workbench.action.terminal.new"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "editor.action.formatDocument"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "editor.action.organizeImports"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "workbench.action.reloadWindow"
+  },
+  {
+    "key": "ctrl+shift+alt+f",
+    "command": "flutter.hotReload"
+  },
+  {
+    "key": "ctrl+shift+alt+r",
+    "command": "flutter.hotRestart"
+  },
+  {
+    "key": "ctrl+shift+alt+a",
+    "command": "flutter.analyze"
+  }
+]

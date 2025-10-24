@@ -1,16 +1,36 @@
 .navBar {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 3em;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #333333;
+}
+
+.navBrand {
+  flex: 1;
+}
+
+.brandLink {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .navMenu {
-  /* width: 30vw; */
   display: flex;
-  justify-content: space-evenly;
+  gap: 2rem;
   align-items: center;
-  /* flex-wrap: wrap; */
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  
+  .navMenu {
+    gap: 1.5rem;
+  }
 }

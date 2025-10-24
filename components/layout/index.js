@@ -8,7 +8,7 @@ import ReactTypingEffect from "react-typing-effect";
 export const name = "Maxs-Dev";
 export const siteTitle = "Portfolio";
 
-export default function Layout({ children, activePage }) {
+export default function Layout({ children, activePage, home }) {
   return (
     <div className={styles.container}>
       {/* <style global jsx>{`
@@ -24,7 +24,7 @@ export default function Layout({ children, activePage }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="MaximiliaN Developer Portfolio"
+          content="Maximiliano Mendez - Full-Stack Developer Portfolio specializing in React, Next.js, and Flutter"
         />
         <meta
           property="og:image"
@@ -35,20 +35,18 @@ export default function Layout({ children, activePage }) {
         <meta name="og:title" content={name + "'s " + siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
-        <Nav activePage={activePage}></Nav>
-      </header>
+      {!home && (
+        <header className={styles.header}>
+          <Nav activePage={activePage}></Nav>
+        </header>
+      )}
       <main className={styles.main}>
-      <h1> <ReactTypingEffect className="typingeffect" text={['Welcome, I´m' , '{ Maximiliano Mendez };']} speed={100} eraseDelay={900} />
-          </h1>
-     {children}
+        {children}
       </main>
       {activePage && (
         <footer className={styles.footer}>
-          <Link href="/">
-            <a>
-              <span className={utilStyles.maxsclass}>return</span>;
-            </a>
+          <Link href="/" className={utilStyles.maxsclass}>
+            return
           </Link>
         </footer>
       )}

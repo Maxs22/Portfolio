@@ -85,6 +85,24 @@ export default function Experience() {
           live="https://memorama-five.vercel.app/"
           code="https://github.com/Maxs22/memorama"
         />
+        
+        {/* Flutter Projects */}
+        <ProjectsOption
+          title="Flutter Weather App"
+          img={Vision}
+          description="Weather application built with Flutter and Dart."
+          tools="Flutter, Dart, API Integration"
+          live=""
+          code="https://github.com/Maxs22/flutter-weather-app"
+        />
+        <ProjectsOption
+          title="Flutter Todo App"
+          img={Portfolio}
+          description="Task management application with Flutter."
+          tools="Flutter, Dart, State Management"
+          live=""
+          code="https://github.com/Maxs22/flutter-todo-app"
+        />
         </div>
     </Layout>
   );

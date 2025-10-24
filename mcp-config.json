@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "portfolio-sync": {
+      "command": "node",
+      "args": ["./mcp-server.js"],
+      "env": {
+        "GITHUB_TOKEN": "",
+        "LINKEDIN_TOKEN": "",
+        "PORTFOLIO_DATA_PATH": "./data/portfolio.json"
+      }
+    }
+  },
+  "capabilities": {
+    "github": {
+      "repositories": true,
+      "profile": true,
+      "stats": true
+    },
+    "linkedin": {
+      "profile": true,
+      "experience": true
+    },
+    "portfolio": {
+      "projects": true,
+      "skills": true,
+      "contact": true
+    }
+  }
+}
