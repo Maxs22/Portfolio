@@ -1,11 +1,8 @@
-# 🚀 Portfolio Deploy Script para Windows PowerShell
-# Este script automatiza el proceso de deploy del portfolio
-
+# Portfolio Deploy Script para Windows PowerShell
 param(
-    [string]$Message = "🚀 Deploy automático"
+    [string]$Message = "Deploy automatico"
 )
 
-# Configurar colores
 $ErrorActionPreference = "Stop"
 
 function Write-ColorOutput {
@@ -35,15 +32,15 @@ Write-ColorOutput "🚀 Iniciando proceso de deploy del portfolio..." "Cyan"
 
 # Verificar que estamos en el directorio correcto
 if (-not (Test-Path "package.json")) {
-    Write-Error "No se encontró package.json. Asegúrate de estar en el directorio del proyecto."
+    Write-Error "No se encontro package.json. Asegurate de estar en el directorio del proyecto."
     exit 1
 }
 
-# Verificar que git está configurado
+# Verificar que git esta configurado
 try {
     git status | Out-Null
 } catch {
-    Write-Error "No se encontró un repositorio git. Inicializa git primero."
+    Write-Error "No se encontro un repositorio git. Inicializa git primero."
     exit 1
 }
 
@@ -55,7 +52,8 @@ if ($gitStatus) {
     git add .
     
     Write-ColorOutput "Haciendo commit de los cambios..." "Blue"
-    $commitMessage = "$Message: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+    $timestamp = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
+    $commitMessage = "$Message: $timestamp"
     git commit -m $commitMessage
     Write-Success "Commit realizado exitosamente"
 } else {
@@ -72,34 +70,25 @@ Write-Success "Push realizado a la rama: $currentBranch"
 if ($currentBranch -ne "main" -and $currentBranch -ne "master") {
     Write-ColorOutput "Creando Pull Request..." "Blue"
     
-    # Verificar si gh CLI está instalado
+    # Verificar si gh CLI esta instalado
     try {
         gh --version | Out-Null
-        $prTitle = "[AUTO-MERGE] Deploy automático desde $currentBranch"
-        $prBody = @"
-🚀 Deploy automático del portfolio
-
-**Cambios incluidos:**
-- Actualizaciones del portfolio
-- Mejoras en el diseño
-- Optimizaciones de rendimiento
-
-**Para mergear automáticamente, el PR debe tener el título con [AUTO-MERGE]**
-"@
+        $prTitle = "[AUTO-MERGE] Deploy automatico desde $currentBranch"
+        $prBody = "Deploy automatico del portfolio`n`nCambios incluidos:`n- Actualizaciones del portfolio`n- Mejoras en el diseno`n- Optimizaciones de rendimiento`n`nPara mergear automaticamente, el PR debe tener el titulo con [AUTO-MERGE]"
         
         gh pr create --title $prTitle --body $prBody --base main --head $currentBranch
         Write-Success "Pull Request creado exitosamente"
     } catch {
-        Write-Warning "GitHub CLI (gh) no está instalado. Crea el PR manualmente en GitHub."
+        Write-Warning "GitHub CLI (gh) no esta instalado. Crea el PR manualmente en GitHub."
         Write-ColorOutput "URL sugerida: https://github.com/Maxs22/Portfolio/compare/main...$currentBranch" "Blue"
     }
 }
 
-# Paso 4: Información final
+# Paso 4: Informacion final
 Write-ColorOutput "Proceso completado!" "Blue"
-Write-Success "El portfolio se desplegará automáticamente a GitHub Pages"
+Write-Success "El portfolio se desplegara automaticamente a GitHub Pages"
 Write-ColorOutput "Puedes ver el progreso en: https://github.com/Maxs22/Portfolio/actions" "Blue"
-Write-ColorOutput "Una vez completado, tu portfolio estará disponible en: https://maxs22.github.io/Portfolio/" "Blue"
+Write-ColorOutput "Una vez completado, tu portfolio estara disponible en: https://maxs22.github.io/Portfolio/" "Blue"
 
 Write-Host ""
 Write-Host "📋 Resumen del proceso:" -ForegroundColor Cyan
@@ -108,6 +97,6 @@ Write-Host "   • Push realizado a $currentBranch ✅" -ForegroundColor Green
 if ($currentBranch -ne "main" -and $currentBranch -ne "master") {
     Write-Host "   • Pull Request creado ✅" -ForegroundColor Green
 }
-Write-Host "   • Deploy automático iniciado ✅" -ForegroundColor Green
+Write-Host "   • Deploy automatico iniciado ✅" -ForegroundColor Green
 Write-Host ""
-Write-Host "🎉 ¡Tu portfolio se está desplegando!" -ForegroundColor Magenta
+Write-Host "🎉 ¡Tu portfolio se esta desplegando!" -ForegroundColor Magenta

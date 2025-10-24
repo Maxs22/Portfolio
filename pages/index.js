@@ -118,7 +118,7 @@ import { useState, useEffect } from 'react';
   return (
     <div>
       <Head>
-        <title>Maximiliano Mendez - Portfolio</title>
+        <title>Maximiliano Mendez - Portfolio | Desarrollador Frontend</title>
         <meta name="description" content="Maximiliano Mendez - Frontend Developer" />
       </Head>
       
